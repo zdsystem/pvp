@@ -1,0 +1,240 @@
+ $('.xlb1').mouseenter(function() {
+     $('.biao1').css('display', 'block');
+     $('.biao2').css('display', 'none');
+
+ })
+ $('.xlb1').mouseleave(function() {
+
+     $('.biao1').css('display', 'block');
+ })
+
+ $('.xlb2').mouseenter(function() {
+     $('.biao1').css('display', 'none');
+     $('.biao2').css('display', 'block');
+
+ })
+ $('.xlb2').mouseleave(function() {
+     $('.biao2').css('display', 'none');
+     $('.biao2').css('display', 'block');
+
+ })
+
+
+ $('.gglb>li').mouseenter(function() {
+     $('.gglb>li').children('a').removeClass('active_li');
+     $(this).children('a').addClass('active_li');
+})
+
+
+
+ // --------------------------------------------------------ok
+
+// .zxer下的div移入移出样式
+
+$('.zxer>div').mouseenter(function(){
+     $('.zxer').children('div').removeClass('divxian');
+     $(this).addClass('divxian');
+
+     
+})
+
+
+
+$('.zxer>div:eq(0)').mouseenter(function(){
+     $('.zxsan').addClass('active_xz');
+     $('.zxsan1').removeClass('active_xz');
+});
+
+$('.zxer>div:eq(1)').mouseenter(function(){
+     $('.zxsan1').addClass('active_xz');
+});
+
+
+
+
+
+// ------------------------------------------------------------ok
+
+
+
+
+
+// .zxsan的英雄选项卡移入移出
+
+$('.xianyi').mouseenter(function(){
+
+     $('.xuanyin').removeClass('xuanyina');
+     $('.xuanze').children('span').mouseenter(function(){
+          $('.xzxianqing').css('display','none');
+
+          // 选项卡
+          $(this).css('background','#f3c258');
+
+          // 右侧详情图
+          $('.xzxianqing').eq($(this).index()).css('display','block');
+
+
+          
+          // 选项卡移出
+          $(this).mouseleave(function(){
+
+               $(this).css('background','#F5F5F5');
+          })
+     })
+})
+
+$('.zxsan').mouseleave(function(){
+     $('.xuanyin').addClass('xuanyina');
+})
+
+
+
+
+
+// 遮罩
+// --------------------------------------------ok
+// 第一个
+
+// 选项卡中li下img遮罩
+$('.batu > li > img').mouseenter(function(){
+
+     // 给所有的去除遮罩
+     $('.batu > li > span').removeClass('zhe');
+
+
+     // 给当前的加遮罩
+     $(this).parent('li').children('span').addClass('zhe');
+})
+
+$('.batu > li').mouseleave(function(){
+
+     // 给所有的去除遮罩
+     $('.batu > li > span').removeClass('zhe');
+
+})
+
+// -----------------------------------------------ok
+
+
+
+// 第二个
+
+$('.batu1 > li > img').mouseenter(function(){
+
+     // 给所有的去除遮罩
+     $('.batu1 > li > span').removeClass('zhe1');
+
+
+     // 给当前的加遮罩
+     $(this).parent('li').children('span').addClass('zhe1');
+})
+
+$('.batu1 > li').mouseleave(function(){
+
+     // 给所有的去除遮罩
+     $('.batu1 > li > span').removeClass('zhe1');
+
+})
+
+
+
+
+
+// -------------------------------------------------------ok
+
+// 小选项卡
+
+$('.xuanze1 > span >p').mouseenter(function(){
+     console.log($(this));
+
+     // 全部清除样式
+     $('.xuanze1 > span').children('p').removeClass('active_zx');
+
+
+
+     // 给当前的加入样式
+     $(this).addClass('active_zx');
+     // console.log(111)
+
+     // 让batu1显示
+     $('.batu1').addClass('active_xz');
+})
+
+
+// ----------------------------------------------------------------- ok
+
+
+$('.yber>div:eq(0)>span:eq(0)').mouseenter(function(){
+     $(this).parent().children('span').eq(1).css('z-index','999');
+     // console.log(111)
+
+});
+
+
+
+$('.yber>div:eq(1)>span:eq(0)').mouseenter(function(){
+     $(this).parent().children('span').eq(1).css('z-index','999');
+     // console.log(111)
+
+});
+
+$('.yber>div:eq(1)').mouseleave(function(){
+     $(this).children('span').eq(1).css('z-index','1');
+     $('.yber>div:eq(0)').css('z-index','999')
+     console.log(111234)
+
+});
+
+// $('.yber>div:eq(1)>span:eq(0)').mouseenter(function(){
+//      $('.yber>div:eq(1)>span:eq(1)').addClass('active_zindex');
+// })
+
+// $('.yber>div:eq(1)>span:eq(0)').mouseleave(function(){
+//      $('.yber>div:eq(1)>span:eq(1)').removeClass('active_zindex');
+// })
+
+
+// ---------------------------------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------
+
+
+$('.szs>ul>li:eq(0)').mouseenter(function(){
+
+     $('.szx').css('display','block');
+     $('.szx1').css('display','none');
+     
+
+})
+
+$('.szs>ul>li:eq(1)').mouseenter(function(){
+     $('.szx').css('display','none')
+     $('.szx1').css('display','block');
+     
+
+})
+
+// ---------------------------------------------------------------------ok
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+

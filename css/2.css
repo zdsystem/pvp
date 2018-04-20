@@ -1,0 +1,525 @@
+/*//自己定义的样式*/*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.cen{
+	margin: 0 auto;
+
+}
+li{
+list-style:none;
+}
+.fl{
+	float: left;
+}
+.clear{
+	clear: both;
+}
+a{
+	text-decoration: none;
+}
+.fr{
+	float: right;
+}
+body{
+	font-family: '微软雅黑';
+}
+
+
+/*//外面的大div*/
+.big{
+	width: 1273px;
+	height: 368px;
+	/*background-color: red;*/
+
+}
+.big>.left{
+	width: 480px;
+
+	/*background: red;*/
+	position: fixed;
+	left: 0;
+	top: 0;
+
+
+
+}
+.big>.left>ul>li{
+	width: 480px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+
+
+}
+.big>.left>ul>li>img{
+	position: absolute;
+	bottom:0;
+	display: block;
+	width: 480px;
+
+
+}
+.big>.left .sliber{
+height: 46px;
+position: absolute;
+left: 30px;
+top:30px;
+/*background-color: red;*/
+
+z-index: 100;
+
+}
+
+.big>.left .sliber>span{
+	font-size: 35PX;
+	overflow: hidden;
+	vertical-align: top;
+
+}
+/*//左侧样式完结*/
+
+/*//右侧顶端的样式*/
+
+.right{
+	width: 793px;
+}
+.right>.top{
+	 padding-top:20px;
+	 height: 34px;
+	 float: right;
+	 /*background: red;*/
+
+
+
+}
+
+.right>.top>ul>li{
+	float: left;
+
+
+	margin-right: 40px;
+
+	position: relative;
+
+}
+.right>.top>ul>li>img{
+	display: inline-block;
+	margin-top: -14px;
+
+}
+
+
+.right>.top>ul>li>img.active{
+	display: none;
+}
+
+.right>.top>ul>li>a{
+	color: #656565;
+	
+	padding-left:5px;
+	vertical-align: top;
+	overflow: hidden;
+
+
+}
+.right>.top li>a{
+	color: #656565;
+}
+
+.right>.top li:hover>a{
+	color: #333;
+}
+.right>.top>ul>li:first-child>img{
+	transform:translate(8px, 0px);
+}
+
+.right>.top>ul>li:nth-child(1)>a{
+	padding-right:10px;
+	background: #FD5253;
+	border-radius: 8px;
+	color:#fff;
+}
+
+.right>.top>ul>li>ol>li{
+	width: 100px;
+	padding-top:16px;
+	
+
+
+}
+
+.right>.top>ul>li>ol{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	left: 10px;
+
+}
+
+.right>.top>ul>li:hover>ol{
+
+	display: block;
+}
+.right>.top>ul>li>.select{
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	top: 25px;
+	border: none;
+	right: 0;
+
+	box-shadow: 0 0 5px 1px #ccc;
+	width: 290px;
+
+
+}
+.right>.top>ul>li:hover>.select{
+	display: block;
+}
+.right>.top>ul>li>.select>input{
+	width: 229px;
+	height: 18px;
+	padding:15px 10px;
+	border: none;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	font-size: 16px;
+
+
+}
+.right>.top>ul>li>.select>.sousu{
+	text-align:center;
+	line-height: 48px;
+	color: #666;
+	width: 40px;
+	height: 48px;
+	border-bottom: 1px solid #ccc;
+}
+.right>.top>ul>li>.select>.sousu:hover{
+	color: #FFF;
+	background: #FD5253;
+
+}
+
+
+
+.right>.top>ul>li>.select>.xingzuo{
+	padding: 20px 0;
+
+	line-height: 16PX;
+	text-align: center;
+
+
+	
+}
+.right>.top>ul>li>.select>.xingzuo>a{
+	color: rgb(43, 114, 255);
+	padding: 0 3px;
+
+}
+/*<!-- 右侧的顶部年结束 -->*/
+
+
+/*<!-- 右侧底部开始 -->*/
+.right>.bot{
+	width: 100%;
+	height:100px;
+	margin-top: 40px;
+	padding-bottom: 10px;/*
+	background-color: blue;*/
+}
+
+
+.right>.bot>.wrap{
+	width: 438px;
+	margin: 0 auto;
+	/*background-color: red;*/
+	height: 100%;
+
+
+
+}
+/*//右侧的底部*/
+.right>.bot>.wrap h1{
+
+	line-height: 59px;
+	margin-bottom: 20px;
+	
+
+}
+.right>.bot>.wrap .haoma{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	margin-bottom: 30px;
+	height: 18px;
+
+	line-height: 30px;
+}
+.right>.bot>.wrap .haoma>p{
+	display: block;
+	font-size: 28px;
+	color:rgb(51,51,51);
+}
+
+.right>.bot>.wrap .haoma>a{
+	display: block;
+
+	font-size: 24px;
+	color:rgb(43, 114, 255);
+}
+/*//注册*/
+.right>.bot>.wrap .dingwei{
+	position: relative;
+	/*background-color: red;*/
+}
+
+.right>.bot>.wrap input{
+	width: 438px;
+	height: 52px;
+	font-size: 18px;
+
+
+	padding: 0  20px;
+	outline: none;
+	border-radius: 8px;
+	margin-top: 24px;
+	margin-bottom: 8px;
+	/*border: none;*/
+	border: 1px solid #ccc;
+
+}
+.right>.bot>.wrap .dingweia>img{
+	display: none;
+	width: 20px;
+	/*height: 15px;*/
+	position: absolute;
+	right: -30px;
+	top: 40px; 
+}
+.right>.bot>.wrap .dingweib img{
+	display:none;
+	width: 44px;
+	height: 36px;
+	top: 33px;
+}
+.right>.bot>.wrap .dingweib>.tu{
+	position: absolute;
+	/*background-color: red;*/
+	z-index: 100;
+	right: -30px;
+	top: 33px; 
+	width: 44px;
+	height: 36px;
+	/*background: red;*/
+	display: none;
+}
+.right>.bot>.wrap .dingweib>.tu img.activeblock{
+	display: block;
+
+}
+.right>.bot>.wrap input:focus{
+
+	  border-color: #549df8;
+}
+.right>.bot>.wrap input.activecol{
+	border-color:#ff5b5b;
+}
+
+/*--------------------------------------------------*/
+
+/*js 操作的验证条件*/
+.right>.bot>.wrap .wai>span{
+
+	background: url(../../images/reg.imgs/1.png) no-repeat;
+    padding: 0 0 0 24px;
+    color: #ff5b5b;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    display: block;
+    height: 30px;
+ 
+}
+.right>.bot>.wrap .pass>span{
+	color: #333;
+}
+.right>.bot>.wrap .pass>span{
+	background: url('../../images/reg.imgs/j1.png') no-repeat;
+}
+.right>.bot>.wrap .pass>span:nth-child(1){
+	background: url('../../images/reg.imgs/dui.png') no-repeat;
+}
+.right>.bot>.wrap .wai>span.dui{
+	
+	background: url('../../images/reg.imgs/dui.png') no-repeat;
+}
+.right>.bot>.wrap .wai>span.j1{
+	
+	background: url('../../images/reg.imgs/j1.png') no-repeat;
+}
+
+.right>.bot>.wrap .wai{
+	display: none;
+}
+
+.right>.bot>.wrap .moddle{
+	position: relative;
+	width: 480px;
+
+	margin-top: 20px;
+
+
+	/*background: url('reg.imgs/q3.png" alt="" class="active"')	 no-repeat center right;*/
+}
+.right>.bot>.wrap .moddle>input{
+	width: 110px;
+
+	margin-top: 0;
+	float: left;
+
+
+
+}
+.right>.bot>.wrap .moddle>img{
+	position:absolute;
+	left:120px;
+	top:23px;
+	background-color: #fff;
+	display: none;
+
+}
+
+.right>.bot>.wrap .moddle>img.activeimg{
+	display: block;
+}
+.right>.bot>.wrap .moddle>.b{
+	width: 265px;
+	/*background-color: red;*/
+	float: right; 
+}
+
+
+.right>.bot>.wrap .moddle>ul.box{
+
+
+	width: 480px;
+	height: 202px;
+	overflow-y: scroll;
+
+	position: absolute;
+	top:0;
+	background-color: #fff;
+	position:absolute;
+	z-index: 10;
+	left: 0;
+	top: 51px;
+
+	box-shadow: 0 0 1px 1px #ccc;
+	border: 1px solid #ccc;
+	padding-left: 0;
+	margin: 0;
+	display: none;
+}
+
+.right>.bot>.wrap .moddle>ul>li{
+	font-size: 20px;
+	color: rgb(0,0,0);
+	padding: 0 20px;
+	line-height: 48px;
+}
+.right>.bot>.wrap .moddle>ul>li:hover{
+	background-color: #eee;
+}
+.right>.bot>.wrap .note>.b{
+	background: #3386FF;
+	text-align:center;
+	color: #fff;
+}
+/*//注册栏*/
+.right>.bot>.wrap input.sub{
+	background: #3386FF;
+	text-align:center;
+	color: #fff;
+	width: 480px;
+	padding: 0 ;
+	font-size: 22px;
+	height: 50px;
+}
+/*//注册下面*/
+.right>.bot>.wrap .footer{
+	font-size: 14px;
+	padding-top: 16px;
+	height: 114px;
+}
+.right>.bot>.wrap .footer>.foot-top{
+	position: relative;
+}
+.right>.bot>.wrap .footer>.foot-top img{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	display: none;
+
+
+}
+.right>.bot>.wrap .footer>.foot-top img.activeFoot{
+	display:inline-block;
+}
+
+.right>.bot>.wrap .footer>.foot-top>a{
+	overflow: hidden;
+	vertical-align: top;
+	color: #CCCCCC;
+	display: inline-block;
+	margin-bottom: 15px;
+
+}
+.right>.bot>.wrap .footer>.foot-top>.foot-right{
+	display: inline-block;
+	text-align: center;
+
+	width: 18px;
+
+}
+.right>.bot>.wrap .footer>.foot-top>.foot-right img{
+	width: 12px;
+	height: 8px;
+	margin-bottom: 4px;
+
+
+}
+.right>.bot>.wrap .footer ul{
+	position: absolute;
+
+
+	display: none;
+	top: 10px;
+
+
+	padding: 0 20px;
+
+
+
+}
+
+
+.right>.bot>.wrap .footer ul>li>a{
+	color:#2b72ff;
+	display:block;
+}
+.right>.bot>.wrap .footer>a{
+	padding: 30px 0;
+	padding-top: 80px;
+	width: 480px;
+	text-align: center;
+	color: #ccc;
+	display: block;
+
+}
